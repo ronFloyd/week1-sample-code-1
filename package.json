@@ -1,0 +1,16 @@
+{
+  "name": "cf-sample-javascript",
+  "version": "1.0.0",
+  "description": "Sample JavaScript to execute.",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "Sample",
+    "Test",
+    "JavaScript"
+  ],
+  "author": "Adron Hall",
+  "license": "Apache 2.0"
+}
