@@ -1,0 +1,44 @@
+<script>
+/*
+
+	Name: Adron Hall
+	Date: 2/2/2015
+	Description: I am writing this to show how to get a file put together.
+
+*/
+
+var firstName = "Adron",
+	lastName = "Hall",
+	mode = "biking",  // This stores a value of what transportation was used today.
+	moneyChange = "0.10",   
+	hoursOfSleep = "4", 
+	awoken,  // This is the hour that I awoke.
+	emails,
+	feels,
+	msg = "";
+
+msg += "Hello " + firstName + lastName;
+
+if (mode == "walk"){
+	msg += "\nI hope your walk was gorgeous!";
+} else{
+	msg += "\nI hope your " + mode + " was enjoyable.";
+}
+
+if (moneyChange > 0.25 && moneyChange < 2) {
+	msg += "\nCould I have a quarter for a call?";
+} else if (moneyChange >= 2){
+	msg += "\n" + moneyChange;
+}
+
+if(hoursOfSleep <= 2){
+	msg += "\nOuch, don't hurt yourself, get some sleep!";
+} else if(hoursOfSleep >=2 && hoursOfSleep <= 6) {
+	msg += "\nGo push chairs today, that's less brainpower. :)";
+} else if (hoursOfSleep > 6 && hoursOfSleep < 10){
+	msg += "\nYou're our brainpower!!!!!!!!";
+}
+
+console.log(msg);
+
+</script>
