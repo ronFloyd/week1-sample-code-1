@@ -1,0 +1,34 @@
+<script>
+
+  var groceryList = {
+    item: "Chili",
+    price: 3.45,
+    stamp: "1/2/2015",
+    items: ["Texas Hot", "Mesquite", "Hipster Vegan", "Vegan"],
+    setOfChiliCost: function() {
+      var cost = 0;
+
+      for (var i = 0; i < groceryList.items.length; i++) {
+        cost += groceryList.price;
+      }
+
+      return cost;
+    }
+  };
+
+  console.log(groceryList.setOfChiliCost());
+
+//item is a property of the object groceryList
+  // var msg = groceryList.Additems();
+
+  // console.log(groceryList);
+  // console.log(groceryList.items);
+
+  // for (var i = 0; i < (items.length - 1); i++) {
+  //   msg += items[i];
+  // }
+
+  // console.log()
+  // console.log(msg);
+
+</script>
