@@ -1,0 +1,23 @@
+<script>
+
+  var shopping = {
+    item: "Chili",
+    price: 3.45,
+    stamp: "1/2/2015",
+    items: ["Texas Hot", "Mesquite", "Hipster Vegan", "Vegan"],
+    SetOfChiliCost: function() {
+      var cost = 0;
+
+      for (k in this.items) {
+
+        cost += this.price;
+
+      }
+
+      return cost;
+    }
+  };
+
+  console.log(shopping.SetOfChiliCost());
+
+</script>
