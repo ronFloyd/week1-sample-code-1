@@ -1,0 +1,29 @@
+<script>
+        var grocery = {
+            item: "Chili",
+            price: 3.45,
+            stamp: "1/2/2015",
+            items: ["Texas hot", "Mesquite", "Hipster Vegan", "Vegan"],
+            SetOfChiliCost: function () {
+                var cost = 0;
+                for (i = 0; i < (grocery.items.length); i++) {
+                    cost += grocery.price;
+                } return cost;
+            }
+
+        }
+   console.log(grocery.SetOfChiliCost());
+
+       // console.log(grocery.AddItems());
+       // var items=["one","two","three"];
+
+        /*var msg="";
+        console.log(items.length);
+        console.log(items[2]);
+for(var i=0;i<(items.length-1);i++){
+            msg += items[i];
+        }
+        console.log(msg);
+        console.log(items.length);
+        console.log(items[2]);*/
+</script>
