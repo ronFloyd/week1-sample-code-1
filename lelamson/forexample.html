@@ -1,0 +1,20 @@
+<script>
+
+  var grocery = {
+    item: "Chili",
+    price: 3.45,
+    stamp: "1/2/2015",
+    items: ["Texas Hot", "Mesquite", "Hipster Vegan", "Vegan"],
+    SetOfChiliCost: function(){
+      var cost = 0;
+      for(var i = 0; i < this.items.length; i++){
+        cost += this.price;
+      }
+      return cost;
+    },
+
+  };
+
+  console.log(grocery.SetOfChiliCost());
+
+</script>
