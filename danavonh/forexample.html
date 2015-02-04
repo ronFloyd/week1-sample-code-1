@@ -1,0 +1,27 @@
+<script>
+
+  var grocery = {       //grocery is the only global variable because of {}
+      item: "Chili",    //it contains 4 properties: item, price, stamp, options
+      price: 3.45,      //setOfChiliCost is a function call that grocery can make
+      stamp: "1/2/2015",//if we say grocery.item in the code below, it will return "Chili"
+      options: ["Texas Hot", "Mesquite", "Hipster Vegan", "Vegan"],
+      setOfChiliCost: function() {
+          var cost = 0;
+
+          //add for loop of what a set of all the items would cost
+
+        for (var i = 0; i < (grocery.options.length); i ++) {
+          cost += grocery.price;
+        }
+
+        return cost;
+      }
+  };
+
+  // for (var i = 0; i < (items.length); i++) {
+  //   msg += items[i];
+  // }
+
+  console.log(grocery.setOfChiliCost());
+
+</script>
