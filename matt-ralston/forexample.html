@@ -1,0 +1,80 @@
+<!-- For Loop Example -->
+<!--
+//   var grocery = {
+//       "item": "Celery",
+//       "stuff": "book",
+//       "food": "chilli"
+//   };
+
+//   var items = ["one", "two", "three"];
+
+//   var msg = "";
+
+
+//   for (var i = 0; i < items.length; i++) {
+//     msg += items[i];
+//   }
+
+//   console.log(msg);
+//   console.log(items.length);
+//   console.log(items[2]);
+
+
+//  -->
+
+
+<!--
+
+  var grocery = {
+      "item": "Celery",
+      "stuff": "book",
+      "food": "chilli"
+  };
+
+  var items = ["one", "two", "three"];
+
+  var msg = "";
+
+
+  for (var i = 0; i < items <= 1; i++) {
+    msg += items[i];
+  }
+
+  console.log(msg);
+
+ -->
+
+<script>
+
+  var grocery = {
+      item: "Chili",
+      price: 3.45,
+      stamp: "1/2/2015",
+      items: ["Texas Hot", "Mesquite", "Vegan", "Hipster Vegan"],
+      SetOfChiliCost: function() {
+        var cost = 0;
+
+        //for loop, add what a set of all the items would cost.
+
+        for (var i = 0; i < (grocery.items.length); i++) {
+          cost += grocery.price;
+        }
+
+
+        return cost;
+      }
+  };
+
+
+  // console.log(grocery);
+  // console.log(grocery.items);
+
+
+  // for (var i = 0; i < items <= 1; i++) {
+  //   msg += items[i];
+  // }
+
+  console.log(grocery.SetOfChiliCost());
+
+</script>
+
