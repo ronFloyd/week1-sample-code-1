@@ -1,0 +1,40 @@
+<script>
+
+  var grocery = {  //these are properties//
+      item: "Chili",
+      price: 3.45,
+      stamp: "1/2/2015",
+      items: ["Texas Hot","Mesquite","Vegan", "Hipster Vegan"],
+      SetofChiliCost: function() {   //setofchilicost is a property of grocery and a funtion becuase it is returning a value//
+        var cost = 0;
+
+        for (var i = 0; i < (grocery.items.length); i++){
+            cost += grocery.price;     //it's going to start at 0 and add the grocery.price 4 times//
+        }
+
+
+        return cost;
+
+    }
+
+  };
+
+  console.log(grocery.SetofChiliCost ());
+
+
+
+  //console.log(cost);
+  // console.log(grocery);
+  // console.log(grocery.items)
+
+
+
+  // for (var i = 0; i < (items.lenth - 1); i++){
+  //   msg += items[i];
+  // }
+
+
+  // console.log()
+
+
+</script>
