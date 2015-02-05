@@ -1,10 +1,10 @@
-@import url(@import url(http://fonts.googleapis.com/css?family=Julius+Sans+One|Libre+Baskerville:400,400italic);
+@import url(http://fonts.googleapis.com/css?family=Julius+Sans+One|Libre+Baskerville:400,400italic);
 
 header { 
-color: #325050;
+color: #0000FF;
 background: #fff;
 border: 1px;
-font-size:32pt;
+font-size:300px;
 font-family: "Libre"
 }
 .link{
