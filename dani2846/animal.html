@@ -1,0 +1,69 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <title>My Dog as a Javascript Animal</title>
+    <link href="stylesheet" htef="sample.css">
+
+<script>
+
+var Animal = {
+  type: "dog",
+  height: 1.5,
+  weight: 24,
+  name: "Daphne",
+  breed: "Boston Terrier",
+  mood: ["excited", "bored", "alert", "tired", "needy", "playful"],
+  color: ["black", "white"],
+  ownerState: ["watching TV", "working", "playing fetch", "eating"],
+
+  fullName: function() {
+    return Animal.name + " is a " + Animal.breed;
+  },
+
+  getSize: function() {
+    return Animal.height + " feet tall and " + Animal.weight + "lbs";
+  },
+
+  wagTail: function() {
+    alert("Wag, wag, wag!!! I'm " + Animal.mood[0]);
+  },
+
+  getMood: function() {
+    var owner = prompt("What is the owner doing?")
+    if (owner == "Watching TV") {
+      alert("I'm " + Animal.mood[1] + " please play with me!");
+    } else if (owner == "working") {
+      alert("No one is here, I'm " + Animal.mood[3] + " and " + Animal.mood[4]);
+    } else if (owner == "playing fetch") {
+      alert("This is so cool, I'm feeling " + Animal.mood[5]);
+    } else {
+      alert("I'm " + Animal.mood[2] + " in case any food is dropped!");
+    }
+  }
+
+
+}
+
+console.log(Animal.getMood());
+
+</script>
+</head>
+<body>
+  <header>This site is all about my dog</header>
+    <article>
+      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+      <p>Organic cred disrupt viral, keytar lomo taxidermy Williamsburg gentrify master cleanse XOXO shabby chic leggings. McSweeney's VHS literally keffiyeh brunch. Hashtag meggings health goth readymade. Ugh asymmetrical tousled meggings. Heirloom narwhal kogi sartorial vegan messenger bag pop-up, gluten-free selfies whatever. Fanny pack polaroid meditation four loko synth. Cray before they sold out Odd Future Williamsburg skateboard.</p>
+      <p>Lorem the bizzle dolizzle its fo rizzle you son of a bizzle, sheezy adipiscing check it out. The bizzle fo shizzle mah nizzle fo rizzle, mah home g-dizzle velizzle, aliquet sure, suscipizzle quis, gravida ass, mah nizzle. Pellentesque egizzle tortizzle. Sizzle erizzle. Ma nizzle at dolor my shizz turpis tempizzle sheezy. Maurizzle pellentesque nibh izzle fo shizzle. Bling bling izzle tortizzle. Pellentesque fo shizzle rhoncizzle nisi. In mammasay mammasa mamma oo sa habitasse fo shizzle dictumst. Funky fresh crunk. Curabitur tellizzle fo shizzle, pot that's the shizzle, mattizzle ac, eleifend fo shizzle my nizzle, nunc. Fo shizzle mah nizzle fo rizzle, mah home g-dizzle suscipit. Integer sempizzle velizzle sizzle pot.</p>
+    </article>
+    <nav>
+      <a href="http://www.akc.org/breeds/boston_terrier/index.cfm">About Boston Terriers</a>
+      <a href="http://www.buzzfeed.com/summeranne/50-wicked-adorable-pictures-of-boston-terriers#.avo7yqAkm">Wicked Adorable Boston Terrier Photos</a>
+    </nav>
+
+  <footer></footer>
+
+
+
+</body>
+
+</html>
