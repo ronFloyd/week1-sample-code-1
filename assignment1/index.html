@@ -1,0 +1,46 @@
+<!DOCTYPE>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title> Animal Page </title>
+  <h1> Start of Javascript </h1>
+  <script type="text/javascript">
+    var animal = {
+      type           : [" Dog ", " Cat ", " Horse "],
+      action         : [" plays.", " sleeps. "," eats. "," jumps. ", " is mammal. ", " has 2 eyes 4 legs and tail. ", " can jump. "],
+      features       : [],
+      msg : "",
+      animalFeatures : function() {
+        for (var i =0;i<animal.type.length;i++) {
+          for (var j=0; j<animal.action.length;j++) {
+            animal.features.push(animal.type[i]+ animal.action[j]);
+          }
+        }
+        for (var k =0;k<animal.features.length;k++) {
+          animal.msg=animal.features[k];
+          document.write(animal.msg);
+        }
+      }
+    };
+    animal.animalFeatures();
+  </script>
+  <h1> End of Javascript Output </h1>
+
+</head>
+<body>
+<h1> WEBPAGE header and body starts here</h1>
+  <header>.... Here is the Page .....</header>
+
+  <section>
+    <article>
+      This is article.
+    </article>
+  </section>
+
+  <article>
+    <p> my paragraph-1 </p>
+    <p> my paragraph-2</p>
+    <p> my paragraph-3 </p>
+  </article>
+</body>
+</html>

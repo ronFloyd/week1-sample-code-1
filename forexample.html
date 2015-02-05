@@ -1,0 +1,39 @@
+<script>
+
+  var grocery = {
+    item:"Chili", //key:value (propertyNam:propertyVal )
+    price: 3.45,
+    stamp: "1/2/2015",
+    items:["Texas Hot", "Mesquite", "Hipster Vegan", "Vegan"],
+    SetOfChiliCost:function(){
+      var cost=0;
+      for(var i =0;i<grocery.items.length;i++) {
+        cost+=grocery.price;
+      };
+      return cost;
+    }
+
+  };
+  console.log(grocery.SetOfChiliCost());
+
+
+
+
+  // console.log(grocery);
+  // console.log(grocery.SetOfChiliCost());
+
+// console.log(items.length);
+// console.log(items[2]);
+
+//   for (var i=0; i<items.length; i++) {
+
+//     msg += items[i];
+//   }
+
+// console.log(msg);
+// console.log(items.length);
+// console.log(items[2]);
+
+</script>
+:wq!
+

@@ -1,0 +1,68 @@
+<script>
+
+/* SET ENVIRONMENT*/
+var firstName ="",
+    lastName = "",
+    mode = "walk",// = car bus airplane bike walk,
+    change, // = USD 152,
+    hoursOfSleep, // = 5.8hrs, if <=2 "ouch sleep if >=2 <=6 "go push chairs today, thats less brainpower" >6<10 "your our brainpower!"
+    awoken, // = 7:52am,
+    emails, // = 15233,
+    feels, // = "happy" or "mostly happy";
+    msg="";
+
+/*use prompt to ask for names money mode*/
+firstName=prompt("What is your firstName?");
+lastName=prompt("What is your lastName?");
+change=prompt("How much money do you have?");
+hoursOfSleep=prompt("How many hours have slept?");
+
+msg = "Hello " +firstName +" "+lastName + ". ";
+
+if (mode == "walk") {
+    msg += "I hope your " + mode+ " " + "was gorgeous. ";
+} else {
+    msg +="I hope your " + mode+ " " + "was enjoyable.";
+  }
+
+if (change > 0.25 && change < 2) {
+    msg+="Can i have quarter for a call?";
+} else {
+    msg+="I have enough "+ "USD"+change+".";
+  }
+
+// switch (true) {
+//     case (hoursOfSleep <=2):
+//     msg+="ouch, dont hurt yourself,get some sleep";
+//     break;
+
+//     case (hoursOfSleep >=2 && hoursOfSleep<=6):
+//     msg+="go push chairs today, thats less brainpower";
+//     break;
+
+//     case (hoursOfSleep >6 && hoursOfSleep<10):
+//     msg+="your our brainpower!";
+//     break;
+// }
+
+
+    if (hoursOfSleep <=2) {
+    msg+="ouch, dont hurt yourself,get some sleep";
+    }
+
+    else if (hoursOfSleep >=2 && hoursOfSleep<=6) {
+      msg+="go push chairs today, thats less brainpower";
+    }
+
+    else if (hoursOfSleep >6 && hoursOfSleep<10){
+      msg+="your our brainpower!";
+
+    }
+
+
+
+
+
+console.log(msg);
+
+</script>
