@@ -1,0 +1,27 @@
+@import url(http://fonts.googleapis.com/css?family=Julius+Sans+One|Libre+Baskerville:400,400italic);
+
+header {
+  color: #FFE6E6;
+  background: #006600;
+  border: 1px;
+  font-size: 64pt;
+  font-family: "Helvetica";
+}
+
+.link {
+  color: #FFE6E6;
+}
+
+#firstParagraph{
+  background: #c8c8c8;
+  text-align: center;
+  font-size: 8em;
+  border-left: double 10px;
+}
+
+#secondParagraph {
+  background: #c8c8c8;
+  text-align: right;
+  font-size: 6em;
+  border-right: double 10px;
+}
