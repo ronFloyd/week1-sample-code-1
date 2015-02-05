@@ -1,0 +1,49 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <title>Zoo time</title>
+    <link rel="stylesheet" href="sample.css">
+    <script>
+
+      function animal (legs,eyes,weight,height) {
+        this.legs = legs;
+        this.eyes = eyes;
+        this.weight = weight;
+        this.height = height;
+
+        this.eat = function() {
+          var weightgain = Math.floor(Math.random()*5);
+          this.weight += weightgain
+          console.log("You gained " + weightgain + "lbs.\n" + "And feel a full " + this.weight + "lbs.");
+        };
+
+        this.run = function() {
+          var distance = Math.floor(Math.random()*200);
+          console.log("You ran sooo fast that you covered " + distance + "yards.")
+        };
+
+      };
+      var velociraptor = new animal(2, 2, 75, 4);
+
+    </script>
+  </head>
+  <header>Creatures of All Shapes and Sizes</header>
+  <nav>
+    <a id="link" href="http://www.csszengarden.com">CSS Zen Garden</a>
+  </nav>
+
+  <body>
+    <img src="http://ia.media-imdb.com/images/M/MV5BMjMyNjI3ODQyNV5BMl5BanBnXkFtZTgwNDM5NTk5MjE@._V1_SX214_AL_.jpg" />
+    <section>
+      <a href="http://www.google.com/doodles/soccer-2012"><h2>Let The Games Begin</h2></a>
+      <article>
+        <p id="firstParagraph">On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte. Du texte. Du texte.'</p>
+        <p id="secondParagraph">Es ist ein lang erwiesener Fakt, dass ein Leser vom Text abgelenkt wird, wenn er sich ein Layout ansieht. Der Punkt, Lorem Ipsum zu nutzen, ist, dass es mehr oder weniger die normale Anordnung von Buchstaben darstellt und somit nach lesbarer Sprache aussieht.</p>
+        <p>È universalmente riconosciuto che un lettore che osserva il layout di una pagina viene distratto dal contenuto testuale se questo è leggibile. </p>
+      </article>
+
+    </section>
+  </body>
+  <footer>What the Monster!</footer>
+
+</html>
